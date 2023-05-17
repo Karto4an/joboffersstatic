@@ -143,6 +143,21 @@
     line-height: 19px;
     color: #FFFFFF;
 }
+.job-offers-bubbles-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.job-offer-number-bubble {
+    padding: 4px 10px;
+
+    background: #0F9D58;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
 .job-card-clickable {
     width: 100%;
 }

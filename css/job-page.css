@@ -28,6 +28,7 @@
     padding: 0px;
     gap: 16px;
     align-items: center;
+    line-height: 1;
 }
 .job-offer-social-button img {
     width: 48px;
