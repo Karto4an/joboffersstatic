@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kineon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <meta http-equiv="refresh" content="1; url=index.html"/> -->
+</head>
+<body>
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="header-justify-left">
+                <a href="index.html" class="text-header">Home</a>
+                <a href="jobs.html" class="text-header">Jobs</a>
+            </div>
+            <div class="dropdown-language">
+                <button id="button-select-language">
+                    <div class="icon-medium icon-select-language"></div>
+                    <span class="text-header">EN</span>
+                    <img src="img/icons/chevron-down.png" alt="" class="icon-chevron-down">
+                </button>
+                <div id="dropdown-language-content">
+                    <a href="" class="dropbtn">RU</a>
+                    <a href="" class="dropbtn">UA</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <img src="img/content/home-cover.jpg" alt="Happy employee" class="image-home-cover">
+    <main class="main">
+        <p class="cover-text-home">
+            Kineon - platform that specializes in improving the interaction between employers and potential employees.
+            <br>
+            The site provides job offers from verified employers who guarantee official direct registration, health insurance for workers and payment of all social taxes for each employee.
+        </p>
+        <h1 class="title-advanatges">By choosing us you get</h1>
+        <ul class="list-advantages">
+            <li>
+                <div class="icon-large youget-icon-1"></div>
+                <p>Reliable Employer</p>
+            </li>
+            <li>
+                <div class="icon-large youget-icon-2"></div>
+                <p>Official registration</p>
+            </li>
+            <li>
+                <div class="icon-large youget-icon-3"></div>
+                <p>Health insurance</p>
+            </li>
+            <li>
+                <div class="icon-large youget-icon-4"></div>
+                <p>Payment of all social taxes on the part of the employer</p>
+            </li>
+            <li>
+                <div class="icon-large youget-icon-5"></div>
+                <p>Continuous professional growth and pay raise</p>
+            </li>
+            <li>
+                <div class="icon-large youget-icon-6"></div>
+                <p>Ongoing support at all stages of employment and beyond</p>
+            </li>
+            <li>
+                <div class="icon-large youget-icon-7"></div>
+                <p>Providing work clothes and tools and tools</p>
+            </li>
+            <li>
+                <div class="icon-large youget-icon-8"></div>
+                <p>Providing comfortable living close to work</p>
+            </li>
+            <li>
+                <div class="icon-large youget-icon-9"></div>
+                <p>Ongoing career advancement</p>
+            </li>
+        </ul>
+    </main>
+    <script>
+        document.getElementById("button-select-language").addEventListener("click", () => document.getElementById("dropdown-language-content").classList.toggle("dropdown-open"));
+        document.addEventListener("click", (event) => {
+        if (!event.target.closest(".dropdown-language")) {
+            document.getElementById("dropdown-language-content").classList.remove("dropdown-open");
+        }});
+    </script>
+</body>
+</html>

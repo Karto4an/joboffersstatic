@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kineon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <link rel="stylesheet" href="css/job-page.css">
+    <!-- <meta http-equiv="refresh" content="5; url=job-page.html"/> -->
+</head>
+<body>
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="header-justify-left">
+                <a href="index.html" class="text-header">Home</a>
+                <a href="jobs.html" class="text-header">Jobs</a>
+            </div>
+            <div class="dropdown-language">
+                <button id="button-select-language">
+                    <div class="icon-medium icon-select-language"></div>
+                    <span class="text-header">EN</span>
+                    <img src="img/icons/chevron-down.png" alt="" class="icon-chevron-down">
+                </button>
+                <div id="dropdown-language-content">
+                    <a href="" class="dropbtn">RU</a>
+                    <a href="" class="dropbtn">UA</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <img src="img/content/builder.jpg" alt="Builder" class="job-offer-cover-image">
+    <main class="main">
+        <h1 class="job-offer-title">Внутрянщики с опытом</h1>
+        <div class="job-offer-geo-row">
+            <div class="job-offer-country-bubble">Чехия</div>
+            <div class="job-offer-city-bubble">Прага</div>
+        </div>
+        <div class="job-offer-salary-bubble">€ 3500</div>
+        <p class="job-offer-descrption">
+            Гипсокартон, плитка, штукатурка, демонтаж и прочие функции по внутренним работам
+        </p>
+        <p class="job-offer-descrption">
+            Берём по официальным чешским документам:
+        </p>
+        <ul class="job-offer-info-list job-offer-documents-list">
+            <li>Чешская виза</li>
+            <li>2-х годовая карта</li>
+            <li>Паспорт ЕС</li>
+        </ul>
+        <p class="job-offer-descrption">
+            Проживание предоставляем в отеле по 2 человека в комнате, есть все необходимые условия для комфортной жизни
+        </p>
+        <ul class="job-offer-info-list job-offer-required-list">
+            <li>Ответственность</li>
+            <li>Честность</li>
+            <li>Трудолюбие</li>
+            <li>Возраст 20-50 лет</li>
+        </ul>
+        <p class="job-offer-descrption">
+            Viber/WhatsApp: +380 73 161 91 81
+        </p>
+        <div class="job-offer-social-button-wrapper">
+            <div class="job-offer-social-button">
+                <a href="whatsapp://send?abid=380731619181">
+                    <img src="img/icons/WhatsApp.png" alt="">
+                </a>
+            </div>
+            <div class="job-offer-social-button">
+                <a href="viber://contact?number=%2B380731619181">
+                    <img src="img/icons/Viber.png" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById("button-select-language").addEventListener("click", () => document.getElementById("dropdown-language-content").classList.toggle("dropdown-open"));
+        document.addEventListener("click", (event) => {
+        if (!event.target.closest(".dropdown-language")) {
+            document.getElementById("dropdown-language-content").classList.remove("dropdown-open");
+        }});
+    </script>
+</body>
+</html>

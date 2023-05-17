@@ -1,0 +1,135 @@
+.country-select-bar {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: 6px;
+}
+#country-select-button {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+}
+
+.country-select-title {
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+.country-select-bubble {
+    margin-right: 4px;
+    padding: 5px 10px;
+    min-width: 40px;
+    background-color: #0088CC;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFF;
+}
+/* break point 550px width wp */
+@media screen and (max-width: 550px) {
+    .job-offer-card {
+        width: 100%;
+        min-width: 342px;
+        max-width: 500px;
+    }
+    .job-offers-wrapper {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 551px) {
+    .job-offer-card {
+        width: 342px;
+        height: 180px;
+    }
+    .job-offers-wrapper {
+        flex-wrap: wrap;
+    }
+}
+.job-offer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    height: 180px;
+    background: #F1F1F1;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+
+
+.job-offer-image {
+    width: 100%;
+    height: 52px;
+    border-radius: 20px 20px 0px 0px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.job-offers-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+}
+.job-offer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 24px 20px;
+    gap: 12px;
+}
+.job-offer-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+}
+.job-offer-geo-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+}
+.job-offer-country-bubble {
+    padding: 4px 10px;
+    background-color: #0088CC;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFF;
+}
+.job-offer-city-bubble {
+    padding: 4px 10px;
+    background-color: #BA50DF;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.job-offer-salary-bubble {
+    padding: 4px 10px;
+
+    background: #EB3152;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.job-card-clickable {
+    width: 100%;
+}

@@ -1,0 +1,34 @@
+.job-offer-cover-image {
+    width: 100%;
+    max-width: max-content;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.main {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.job-offer-info-list {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+
+
+
+.job-offer-social-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+.job-offer-social-button img {
+    width: 48px;
+    height: 48px;
+}

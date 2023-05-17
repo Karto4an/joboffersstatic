@@ -1,0 +1,180 @@
+body {
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.icon-medium {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-large {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+a {
+    color: #0088CC;
+}
+.icon-select-language {
+    background-image: url(../img/icons/globe.png);
+    background-size: contain;
+}
+.dropdown-language, .dropdown-country {
+    position: relative;
+    display: inline-block;
+}
+#dropdown-language-content, #dropdown-country-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+#dropdown-language-content a, #dropdown-country-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-open {
+    display: block !important;
+}
+.dropdown-open {display: block;}
+.dropbtn:hover {background-color: #eeeeee;}
+
+.header-wrapper {
+    border: 1px solid #E8E8E8;
+}
+
+
+.header {
+    display: flex;
+    height: 46px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4px 24px;
+    gap: 24px;
+    max-width: 1200px;
+}
+.header-justify-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    height: 19px;
+}
+.text-header {
+    color: #0088CC;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+#button-select-language {
+    display: flex;
+    height: 16px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+}
+.icon-chevron-down {
+    height: 10px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+}
+.image-home-cover{
+    width: 100%;
+    max-width: max-content;
+    display: block;
+    margin: 0 auto;
+}
+.cover-text-home {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.title-advanatges {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #0088CC;
+
+    margin: 0 auto;
+}
+
+
+.list-advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.list-advantages li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    height: 48px;
+}
+.list-advantages p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.youget-icon-1 {
+    background-image: url(../img/icons/youget-icon-1.svg);
+}
+.youget-icon-2 {
+    background-image: url(../img/icons/youget-icon-2.svg);
+}
+.youget-icon-3 {
+    background-image: url(../img/icons/youget-icon-3.svg);
+}
+.youget-icon-4 {
+    background-image: url(../img/icons/youget-icon-4.svg);
+}
+.youget-icon-5 {
+    background-image: url(../img/icons/youget-icon-5.svg);
+}
+.youget-icon-6 {
+    background-image: url(../img/icons/youget-icon-6.svg);
+}
+.youget-icon-7 {
+    background-image: url(../img/icons/youget-icon-7.svg);
+}
+.youget-icon-8 {
+    background-image: url(../img/icons/youget-icon-8.svg);
+}
+.youget-icon-9 {
+    background-image: url(../img/icons/youget-icon-9.svg);
+}
