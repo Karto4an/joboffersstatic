@@ -44,10 +44,13 @@ a {
     display: block;
 }
 .dropdown-open {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
 }
 .dropdown-open {display: block;}
-.dropbtn:hover {background-color: #eeeeee;}
+.dropbtn:hover {background-color: #00699D;}
 
 .header-wrapper {
     border: 1px solid #E8E8E8;
