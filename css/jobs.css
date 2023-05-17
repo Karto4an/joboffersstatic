@@ -111,6 +111,18 @@
     line-height: 19px;
     color: #FFF;
 }
+.dropbtn-country-bubble {
+    padding: 4px 10px;
+    background-color: #0088CC;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFF;
+    text-align: center;
+}
+
 .job-offer-city-bubble {
     padding: 4px 10px;
     background-color: #BA50DF;
