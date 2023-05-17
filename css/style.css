@@ -36,7 +36,7 @@ a {
     min-width: max-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    right: -64px;
+    right: -56px;
     border-radius: 14px;
     animation: fade-in 0.08s ease-in;
 }
