@@ -27,8 +27,12 @@
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
+    align-items: center;
 }
 .job-offer-social-button img {
     width: 48px;
     height: 48px;
+}
+.job-offer-number {
+    color: #0088CC;
 }
