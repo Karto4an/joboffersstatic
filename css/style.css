@@ -15,8 +15,11 @@ body {
 .icon-large {
     width: 48px;
     height: 48px;
+    min-width: 48px;
+    min-height: 48px;
     background-repeat: no-repeat;
     background-size: contain;
+    display: block;
 }
 a {
     color: #0088CC;
@@ -25,7 +28,7 @@ a {
     background-image: url(../img/icons/globe.png);
     background-size: contain;
 }
-.dropdown-language, .dropdown-country {
+.dropdown-language, .dropdown-country, .dropdown-number {
     position: relative;
     display: inline-block;
 }
@@ -36,9 +39,12 @@ a {
     min-width: max-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    right: -56px;
+    
     border-radius: 14px;
     animation: fade-in 0.08s ease-in;
+}
+#dropdown-country-content {
+    right: -64px;
 }
 @keyframes fade-in {
     from {
@@ -62,7 +68,8 @@ a {
     padding: 8px;
 }
 .dropdown-open {display: block;}
-.dropbtn:hover {background-color: #00699D;}
+#dropdown-language-content .dropbtn:hover {background-color: #e7e7e7;}
+#dropdown-country-content .dropbtn:hover {background-color: #00699D;}
 
 .header-wrapper {
     border: 1px solid #E8E8E8;
@@ -118,8 +125,9 @@ a {
     gap: 24px;
 }
 .image-home-cover{
-    width: 100%;
-    max-width: max-content;
+    width: auto;
+    height: auto;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -148,7 +156,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 28px;
 }
 .list-advantages li {
     display: flex;

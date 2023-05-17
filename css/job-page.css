@@ -1,6 +1,7 @@
 .job-offer-cover-image {
-    width: 100%;
-    max-width: max-content;
+    width: auto;
+    height: auto;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -19,7 +20,16 @@
 }
 
 
-
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .job-offer-social-button-wrapper {
     display: flex;
@@ -36,4 +46,36 @@
 }
 .job-offer-number {
     color: #0088CC;
+}
+
+#dropdown-number-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(15, 157, 88, 0.15);
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    
+    border-radius: 14px;
+    animation: fade-in 0.08s ease-in;
+}
+.dropdown-number-item {
+    padding: 4px 10px;
+
+    background: #0F9D58;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+.dropdown-number-item img {
+    width: 20px;
+    height: 20px;
 }

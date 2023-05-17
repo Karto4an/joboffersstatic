@@ -35,8 +35,9 @@
             </div>
         </header>
     </div>
-    <img src="img/content/builder.jpg" alt="Builder" class="job-offer-cover-image">
+    
     <main class="main">
+        <img src="img/content/builder.jpg" alt="Builder" class="job-offer-cover-image">
         <h1 class="job-offer-title">Внутрянщики с опытом</h1>
         <div class="job-offers-bubbles-wrapper">
             <div class="job-offer-geo-row">
@@ -45,9 +46,22 @@
                 <div class="job-offer-salary-bubble">€ 3000 - 3500</div>
             </div>
             <div class="job-offer-social-button-wrapper">
-                <div class="job-offer-number-bubble">
-                    +380 73 161 91 81
+                <div class="dropdown-number">
+                    <button id="job-offer-number-bubble">
+                        +380 73 161 91 81
+                    </button>
+                    <div id="dropdown-number-content">
+                        <a href="tel:+380731619181" class="dropdown-number-item">
+                            <img src="img/icons/phone-call.svg" alt="">
+                            <p>Позвонить</p>
+                        </a>
+                        <button class="dropdown-number-item" id="copy-number-button" onclick="copyToClipboard()">
+                            <img src="img/icons/copy.svg" alt="">
+                            <p>Копировать</p>
+                        </button>
+                    </div>
                 </div>
+
                 <div class="job-offer-social-button">
                     <a href="whatsapp://send?abid=380731619181">
                         <img src="img/icons/WhatsApp.png" alt="">
@@ -87,6 +101,25 @@
         if (!event.target.closest(".dropdown-language")) {
             document.getElementById("dropdown-language-content").classList.remove("dropdown-open");
         }});
+        document.getElementById("job-offer-number-bubble").addEventListener("click", () => document.getElementById("dropdown-number-content").classList.toggle("dropdown-open"));
+        document.addEventListener("click", (event) => {
+        if (!event.target.closest(".dropdown-number")) {
+            document.getElementById("dropdown-number-content").classList.remove("dropdown-open");
+        }});
+        phone_field = document.getElementById("job-offer-number-bubble")
+
+        function copyToClipboard() {
+            const input = document.createElement('textarea');
+            input.value = phone_field.textContent.trim();
+            document.body.appendChild(input);
+            input.select();
+            input.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            document.getElementById("dropdown-number-content").classList.remove("dropdown-open");
+        }
+
+
     </script>
 </body>
 </html>
