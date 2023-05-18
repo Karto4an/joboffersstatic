@@ -44,7 +44,7 @@ a {
     animation: fade-in 0.08s ease-in;
 }
 #dropdown-country-content {
-    right: -64px;
+    left: 45%;
 }
 @keyframes fade-in {
     from {
