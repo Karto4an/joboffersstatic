@@ -6,7 +6,9 @@
     border-radius: 20px;
 }
 
-
+#copy-number-button {
+    cursor: pointer;
+}
 
 .main {
     font-weight: 600;
