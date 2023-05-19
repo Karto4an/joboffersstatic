@@ -78,6 +78,7 @@
     display: flex;
     width: 100%;
     gap: 24px;
+    justify-content: space-between;
 }
 .job-offer-main {
     display: flex;

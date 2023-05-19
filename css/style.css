@@ -13,10 +13,10 @@ body {
     background-size: contain;
 }
 .icon-large {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-    min-height: 48px;
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
@@ -124,6 +124,9 @@ a {
     padding: 24px;
     gap: 24px;
 }
+.main-index {
+    gap: 42px;
+}
 .image-home-cover{
     width: auto;
     height: auto;
@@ -133,11 +136,11 @@ a {
     border-radius: 20px;
 }
 .cover-text-home {
-    font-family: 'Arsenal';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 24px;
+    /* line-height: 20px; */
     text-align: center;
     width: 100%;
 }
@@ -155,24 +158,29 @@ a {
 
 .list-advantages {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 28px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px;
+    max-width: 1200px;
 }
 .list-advantages li {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 0px;
     gap: 16px;
 
-    height: 48px;
+    height: fit-content;
+    width: 30%;
+    margin: 0 auto;
 }
 .list-advantages p {
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 26px;
+    /* line-height: 17px; */
+    text-align: center;
+    color: #0088CC;
 }
 
 .youget-icon-1 {
